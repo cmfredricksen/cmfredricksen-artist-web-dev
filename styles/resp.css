@@ -8,11 +8,12 @@
  }
 
  ul {
-     list-style: none;;
+     list-style: none;
+     
  }
 
  li {
-     background-color: plum;
+     background-color: darkorchid;
      margin: .5em 0;
      padding: .5em 0;
  }
@@ -20,6 +21,15 @@
  h1 {
      margin: .5em 0;
      padding:.5em;
+     background-color: orchid;
+     color: darkred;
+ }
+
+ p {
+     margin-left: 0;
+     text-align: left;
+     margin-right: 2em;
+     padding-bottom: 2em;
  }
 
  img {
@@ -27,46 +37,44 @@
      height: auto;
  }
 
+
  a {
      text-align: center;
      text-decoration: none; 
-     color: black;
+     color:palegoldenrod;
+ }
+
+ .a1 {
+     
+     padding: .5em;
+     float: inline-end;
+     color: palegoldenrod;
+ }
+
+ .a1:hover {
+     color: darkred;    
  }
 
  a:hover {
-     color: white;
+     color: darkred;
  }
 
 .wrapper {
-    max-width: 992px;
+    max-width: 800px;
     margin: auto;
     display: grid;
-    grid-template-rows: .5fr 1fr 1.5fr .5fr;
+    grid-template-rows: auto;
     grid-template-areas: 
        "head"
        "side"
+       "nav"
        "main"
        "foot";
     padding-left: .5em;
     padding-right: .5em;
-    text-align: center;
-    
-    
+    text-align: center;    
 }
 
-
-@media screen and (min-width: 600px) {
-    .wrapper {
-        display: grid;
-        grid-template-columns: 25vw 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-          "side head head"
-          "side main main"
-          "side main main"
-          "side foot foot";
-    }
-}
 
 .head {
     grid-area: head;
@@ -76,21 +84,61 @@
 
 .side {
     grid-area: side;
-    background-color: orangered;
-    padding: 1.5em 0;
+    background-color: orange;
+    padding: .75em 0;
+}
+
+.nav {
+    display: inline-block;
+    background-color: darkorchid;
 }
 
 .main {
     grid-area: main;
     background-color: orchid;
-    padding: 1.5em;
-    
+    padding: 1.5em;    
 }
 
 .foot {
     grid-area: foot;
     background-color: orange;
-    text-align: center;
-    padding: 1.5em;
+    text-align: center;    
+}
+
+/*large screen settings below*/
+@media screen and (min-width: 600px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+          "side head"
+          "nav nav"
+          "main main"
+          "foot foot";
+    }
+
+    .main {
+      grid-template-columns: 1.5fr 1fr;
+      display: grid;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      padding-right: 0;
+    }
+
+    .nav {
+        font-family: 'Courier New', Courier, monospace;
+        display: inline;
+        grid-area: nav;
+    }
+
+    h1 {
+        background-color: orange;
+    }
     
 }
+
+/*large screen settings above*/
