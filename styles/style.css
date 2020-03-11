@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+    
+        display: inline;
+        background-color: mediumaquamarine;
+        clear: both;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nova Mono', monospace;
+    color: darkmagenta;
+
+}
+
+
+p {
+    font-family: 'Anonymous Pro', monospace;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 25vw 1fr 1fr;
+    grid-template-rows: 20vh 30vh 30vh 20vh;
+    grid-template-areas: 
+      "side head head"
+      "side main main"
+      "side main main"
+      "side foot foot";
+      
+}
+
+.head {
+    grid-area: head;
+}
+
+.nav {
+    grid-area: head;
+}
+
+.side {
+    grid-area: side;
+    margin-right: 2vw;
+    background-color: magenta;
+}
+
+.main {
+    grid-area: main;
+    margin-left: 2vw;
+}
+
+.foot {
+    grid-area: foot;
+    color: darkmagenta;
+}
