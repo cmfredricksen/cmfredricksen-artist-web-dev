@@ -9,27 +9,47 @@
 
  ul {
      list-style: none;
+     background-color: darkorchid;
+    
      
  }
 
- li {
-     background-color: darkorchid;
-     margin: .5em 0;
-     padding: .5em 0;
- }
+
+
+ 
 
  h1 {
      margin: .5em 0;
      padding:.5em;
      background-color: orchid;
      color: darkred;
+     font-family: 'Montserrat', sans-serif;
  }
+
+h3 {
+   
+     padding:.5em;
+     background-color: orchid;
+     color: palegoldenrod;
+     font-family: 'Montserrat', sans-serif;
+
+}
 
  p {
      margin-left: 0;
      text-align: left;
      margin-right: 2em;
      padding-bottom: 2em;
+     font-family: 'Work Sans', sans-serif;
+
+
+ }
+
+ .copy {
+    
+    
+     color: darkred
+     
  }
 
  img {
@@ -42,13 +62,17 @@
      text-align: center;
      text-decoration: none; 
      color:palegoldenrod;
+     font-family: 'Work Sans', sans-serif;
+     
+     
  }
 
  .a1 {
      
      padding: .5em;
-     float: inline-end;
      color: palegoldenrod;
+     font-size: x-large;
+     font-family: 'Work Sans', sans-serif;
  }
 
  .a1:hover {
@@ -61,6 +85,14 @@
 
  .a2 {
      color: darkred;
+ }
+
+ .a2:hover {
+     color: palegoldenrod;
+ }
+
+ .a3 {
+     line-height: 1.5em;
  }
 
 .wrapper {
@@ -95,6 +127,7 @@
 .nav {
     display: inline-block;
     background-color: darkorchid;
+    padding: .75em 0;
 }
 
 .main {
@@ -135,7 +168,7 @@
     }
 
     .nav {
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'Baloo Chettan 2', cursive;
         display: inline;
         grid-area: nav;
     }
