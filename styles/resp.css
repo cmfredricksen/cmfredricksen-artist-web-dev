@@ -10,6 +10,7 @@
  ul {
      list-style: none;
      background-color: darkorchid;
+     padding: .75em 0;
     
      
  }
