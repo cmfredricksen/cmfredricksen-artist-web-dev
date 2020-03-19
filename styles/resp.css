@@ -2,24 +2,20 @@
     margin: 0;
     padding: 0;
 }
- body {
+ 
+body {
      background-color: oldlace;
 
  }
 
- ul {
+ul {
      list-style: none;
      background-color: darkorchid;
      padding: .75em 0;
     
-     
- }
+    }
 
-
-
- 
-
- h1 {
+h1 {
      margin: .5em 0;
      padding:.5em;
      background-color: orchid;
@@ -42,31 +38,25 @@ h3 {
      margin-right: 2em;
      padding-bottom: 2em;
      font-family: 'Work Sans', sans-serif;
+}
 
-
- }
-
- .copy {
-    
-    
-     color: darkred
-     
- }
+.copy {
+    color: darkred
+}
 
  img {
      width: 100%;
      height: auto;
- }
+}
 
 
- a {
+a {
      text-align: center;
      text-decoration: none; 
      color:palegoldenrod;
      font-family: 'Work Sans', sans-serif;
      
-     
- }
+    }
 
  .a1 {
      
